@@ -157,7 +157,7 @@ export default function Portfolio() {
               alt="LocalValet"
               className="rounded-xl w-full h-48 object-cover mb-4"
             />
-            <h3 className="text-2xl font-bold text-purple-400 mb-2">
+            <h3 className="text-2xl font-bold text-blue-400 mb-2">
               LocalValet
             </h3>
             <p className="opacity-80 mb-4">
@@ -175,7 +175,7 @@ export default function Portfolio() {
               alt="Inverta Mind"
               className="rounded-xl w-full h-48 object-cover mb-4"
             />
-            <h3 className="text-2xl font-bold text-purple-400 mb-2">
+            <h3 className="text-2xl font-bold text-blue-400 mb-2">
               InvertaMind
             </h3>
             <p className="opacity-80 mb-4">
