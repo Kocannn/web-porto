@@ -163,7 +163,7 @@ export default function Portfolio() {
             <p className="opacity-80 mb-4">
               LocalValet adalah aplikasi panel kontrol server lokal yang dirancang sebagai alternatif yang cepat dan ringan untuk XAMPP atau Laragon yang tersedia di Windows, Linux, dan MacOS. Dibuat dari awal menggunakan Go (Golang) untuk backend, aplikasi ini memiliki jejak memori yang sangat rendah dan kinerja instan
             </p>
-            <button className="px-4 py-2 bg-purple-500 hover:bg-purple-600 rounded-lg text-white">
+            <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white">
               Lihat Detail
             </button>
           </SpotlightCard>
@@ -181,7 +181,7 @@ export default function Portfolio() {
             <p className="opacity-80 mb-4">
               Inverta Mind adalah sistem kecerdasan buatan yang dirancang untuk mengevaluasi, mengkritisi, dan memperbaiki kesimpulannya sendiri secara mandiri. Proyek ini berfokus pada pengembangan model yang mampu melakukan self-reflection terhadap respons yang dihasilkannya dengan pendekatan meta-reasoning dan prompt chaining
             </p>
-            <button className="px-4 py-2 bg-purple-500 hover:bg-purple-600 rounded-lg text-white">
+            <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg text-white">
               Lihat Detail
             </button>
           </SpotlightCard>
