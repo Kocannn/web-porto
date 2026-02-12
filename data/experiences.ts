@@ -7,14 +7,14 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    year: "2025 - Now",
+    year: "2025",
     title: "Backend Developer",
     company: "Hammercode Palu",
     description:
       "Membangun dan mengelola backend Learning Management System (LMS) untuk 200+ pengguna aktif. Bertanggung jawab atas arsitektur API, desain database relasional (10+ tabel), workflow migrasi menggunakan Goose, serta kolaborasi intens dengan tim frontend untuk memastikan integrasi REST API yang stabil dan scalable.",
   },
   {
-    year: "2025 - Now",
+    year: "2025",
     title: "Web Development Mentor",
     company: "Programming Tadulako",
     description:
@@ -42,7 +42,7 @@ export const experiences: Experience[] = [
       "Membangun dashboard interaktif dengan visualisasi data kompleks menggunakan React dan Laravel. Berhasil mengoptimasi performa aplikasi dengan menurunkan waktu load dari ±4 detik menjadi <1 detik melalui optimasi query dan manajemen state.",
   },
   {
-    year: "2023 - Now",
+    year: "2023",
     title: "Bachelor of Informatics Engineering",
     company: "Universitas Tadulako",
     description:

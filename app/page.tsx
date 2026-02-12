@@ -40,7 +40,7 @@ export default function Portfolio() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
+
       const sections = NAV_ITEMS.map(item => item.toLowerCase());
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -145,7 +145,7 @@ export default function Portfolio() {
               ✨ {profile.tagline}
             </motion.div>
           </BlurFade>
-          
+
           <BlurFade delay={0.2} inView>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Hi, I'm{" "}
@@ -162,16 +162,16 @@ export default function Portfolio() {
               </span>
             </h1>
           </BlurFade>
-          
+
           <BlurFade delay={0.3} inView>
             <p className="text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed">
               {profile.bio.short}
             </p>
           </BlurFade>
-          
+
           <BlurFade delay={0.4} inView>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-              <motion.a 
+              <motion.a
                 href="#projects"
                 className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl font-medium overflow-hidden"
                 whileHover={{ scale: 1.02 }}
@@ -181,7 +181,7 @@ export default function Portfolio() {
                   🚀 Lihat Proyek
                 </span>
               </motion.a>
-              <motion.a 
+              <motion.a
                 href="#contact"
                 className="px-8 py-4 border-2 border-blue-400/50 rounded-xl font-medium hover:bg-blue-400/10 hover:border-blue-400 transition-all flex items-center gap-2"
                 whileHover={{ scale: 1.02 }}
@@ -234,7 +234,7 @@ export default function Portfolio() {
         </div>
 
         {/* Scroll indicator */}
-        <motion.div 
+        <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
@@ -242,7 +242,7 @@ export default function Portfolio() {
           <div className="flex flex-col items-center gap-2 text-gray-400">
             <span className="text-xs uppercase tracking-widest">Scroll</span>
             <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center pt-2">
-              <motion.div 
+              <motion.div
                 className="w-1.5 h-1.5 bg-blue-400 rounded-full"
                 animate={{ y: [0, 16, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
@@ -283,7 +283,6 @@ export default function Portfolio() {
               </div>
 
               {/* Experience Timeline */}
-              <ExperienceList experiences={experiences} initialShow={3} />
             </div>
           </BlurFade>
 
@@ -294,6 +293,8 @@ export default function Portfolio() {
                 <StatsCard key={stat.label} stat={stat} index={index} />
               ))}
             </div>
+
+            <ExperienceList experiences={experiences} initialShow={3} />
           </BlurFade>
         </div>
       </section>
@@ -323,7 +324,7 @@ export default function Portfolio() {
             <p className="text-sm text-gray-500 mb-4">Juga familiar dengan:</p>
             <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
               {additionalSkills.map((skill) => (
-                <span 
+                <span
                   key={skill}
                   className="px-3 py-1 bg-gray-800/50 rounded-full text-sm text-gray-400 border border-gray-700/50 hover:border-blue-500/30 hover:text-blue-400 transition-colors cursor-default"
                 >
@@ -424,14 +425,12 @@ export default function Portfolio() {
               {/* Availability Status */}
               <div className="p-6 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl border border-blue-500/20">
                 <div className="flex items-center gap-3">
-                  <div className={`w-3 h-3 rounded-full animate-pulse ${
-                    profile.availability.status === 'available' ? 'bg-green-500' :
-                    profile.availability.status === 'busy' ? 'bg-yellow-500' : 'bg-red-500'
-                  }`} />
-                  <span className={`font-medium ${
-                    profile.availability.status === 'available' ? 'text-green-400' :
-                    profile.availability.status === 'busy' ? 'text-yellow-400' : 'text-red-400'
-                  }`}>
+                  <div className={`w-3 h-3 rounded-full animate-pulse ${profile.availability.status === 'available' ? 'bg-green-500' :
+                      profile.availability.status === 'busy' ? 'bg-yellow-500' : 'bg-red-500'
+                    }`} />
+                  <span className={`font-medium ${profile.availability.status === 'available' ? 'text-green-400' :
+                      profile.availability.status === 'busy' ? 'text-yellow-400' : 'text-red-400'
+                    }`}>
                     {profile.availability.message}
                   </span>
                 </div>
